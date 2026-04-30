@@ -13,7 +13,7 @@ export default function Dashboard() {
     setError('');
     
     try {
-      const res = await fetch('[https://nith-backend.onrender.com/api/assign](https://nith-backend.onrender.com/api/assign)', {
+      const res = await fetch('https://nith-backend.onrender.com/api/assign', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ date, session })
